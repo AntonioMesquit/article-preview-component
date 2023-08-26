@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+/*font-family: 'Manrope', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s
+}
+body{
+    display: flex;
+    background-color: rgb(237, 242, 248);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+.card{
+    display: flex;
+    width: 50%;
+    height: 360px;
+}
+.image{
+    width: 300px;
+}
+.draw{
+    width: 350px;
+    border-top-left-radius: 10px;
+    height: 360px;
+    border-bottom-left-radius: 10px;
+}
+.context{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 35px 30px 30px 30px;
+}
+.text-tittle  h1{
+    font-size: 27px;
+    color: rgb(80, 87, 98);
+    margin-bottom: 20px;
+}
+.text-tittle p{
+    color: rgb(170, 177, 184);
+    margin-bottom: 40px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-michele{
+    display: flex;
+    align-items: center;
+}
+.ft{
+    margin-right: 20px;
+}
+.mich{
+    width: 50px;
+    border-radius: 50%;
+}
+.name h2{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.name p{
+    color: rgb(170, 177, 184);
+    word-spacing: 3px
+}
+.share{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238, 242, 249);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shares{
+    width: 20px;
+}
+.icon{
+    fill: black;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    padding-inline: 10px;
+}
+.side{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(73, 85, 106);
+    padding: 15px 15px 15px 35px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    
+}
+.side p{
+    color: rgba(255, 255, 255, 0.673);
+    font-weight: 00;
+}
+.rabo{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(73, 85, 106);
+    top: 50%;
+    margin-left: 7px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+
+}
+.sharee{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(238, 242, 249);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sharess{
+    width: 15px;
+}
+.rabos{
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(73, 85, 106, 0.549);
+    width: 20px;
+    height: 20px;
+}
+.share.active .side{
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+}
+.share.active .rabo{
+
+    visibility: visible;
+    opacity: 1;
+    top: 54.5%;
+}
+.icons .share{
+    display: none;
+}
+@media screen and (max-width:1580px){
+    .text-tittle h1{
+        font-size: 23px;
+        }
+     .text-tittle p{
+        font-size: 17px;
+     }
+    .name h2{
+        font-size: 15px;
+    }
+    .name p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1459px){
+    .text-tittle h1{
+        font-size: 20px;
+        }
+     .text-tittle p{
+        font-size: 14px;
+        margin-bottom: 50px;
+     }
+    .name h2{
+        font-size: 11px;
+    }
+    .name p{
+        font-size: 13px;
+    }
+    .share.active .rabo{
+        top: 56%;
+     }
+}
+@media screen and (max-width:1200px){
+    .text-tittle h1{
+        font-size: 15px;
+        }
+     .text-tittle p{
+        font-size: 12px;
+        margin-bottom: 50px;
+     }
+   
+}
+@media screen and (max-width:1080px){
+    .sharee{
+     display: flex;
+    }
+    .card{
+     flex-direction: column;
+     width: 300px;
+     height: 600px;
+    }
+    .icons .share{
+        display: flex;
+    }
+    .image{
+        height: 250px;
+        width: 100%;
+    }
+    .draw{
+        width: 100%;
+        height: 100%;
+    }
+    .context{
+        width: 100%;
+        padding-bottom: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .ok{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(238, 242, 249);
+        border-radius: 50%;
+    }
+    .share.active .rabo{
+        display: none;
+    }
+    .share.active .side{
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      top: 75%;
+      margin-right: 220px;
+      height: 70px;
+      width: 300px;
+      
+    }
+    .info.active .img-michele{
+        opacity: 0;
+        visibility: none;
+        pointer-events: none;
+    }
+    .info.active .z{
+       display: none;
+    }
+    .info .share{
+        background-color: rgba(238, 242, 249, 0);
+    }
+    .info{
+        margin-bottom: 30px;
+    }
+    .info.active {
+        margin-bottom: 0px;
+    }
+    .draw{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+  
+}
