@@ -270,26 +270,26 @@ li{
 }
 @media screen and (max-height:800px){
     .share.active .side{
-        top: 75%;
+        top: 78%;
     }
 }
 @media screen and (max-height:706px){
     .share.active .side{
-        top: 75%;
+        top: 78%;
     }
 }
 @media screen and (max-height:600px){
     .share.active .side{
-        top: 85%;
+        top: 88%;
     }
 }
 @media screen and (max-height:500px){
     .share.active .side{
-        top: 92%;
+        top: 94%;
     }
 }
 @media screen and (max-height:450px){
     .share.active .side{
-        top: 100%;
+        top: 103%;
     }
 }
