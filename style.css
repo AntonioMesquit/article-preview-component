@@ -238,7 +238,7 @@ li{
     .share.active .side{
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
-      top: 75%;
+      top: 70%;
       margin-right: 220px;
       height: 70px;
       width: 300px;
@@ -264,6 +264,32 @@ li{
     .draw{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
+       
     }
   
+}
+@media screen and (max-height:800px){
+    .share.active .side{
+        top: 75%;
+    }
+}
+@media screen and (max-height:706px){
+    .share.active .side{
+        top: 75%;
+    }
+}
+@media screen and (max-height:600px){
+    .share.active .side{
+        top: 85%;
+    }
+}
+@media screen and (max-height:500px){
+    .share.active .side{
+        top: 92%;
+    }
+}
+@media screen and (max-height:450px){
+    .share.active .side{
+        top: 100%;
+    }
 }
